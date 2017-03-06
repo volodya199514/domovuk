@@ -1,0 +1,1450 @@
+body{
+    padding:0;
+    margin: 0 auto;
+}
+/*** робить чорним колір у plasholder*/
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000;
+}
+:-ms-input-placeholder {
+    color: #000;
+}
+/*********************Header****************************/
+.header{
+    width: 100%;
+    height: 100px;
+    background: url("../img/detalipsd/fon-osnov.png");
+}
+.header_content{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../img/detalipsd/fon.png");
+}
+.logo a{
+    position: absolute;
+    background: url("../img/detalipsd/logo.png");
+    width: 240px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.block-menu{
+    position: absolute;
+    width: 690px;
+    height: 74px;
+    margin-top: 10px;
+    margin-left: 300px;
+    padding: 0 0 0 0;
+    float: left;
+}
+.menu li{
+    display: inline;
+    font-weight:bold;
+    font-size: 30px;
+    font-family:Century Gothic;
+    padding: 0 10px 0 10px;
+}
+.block-menu a{
+    text-decoration: none;
+    color: #e5c8fe;
+    font-weight: bold;
+}
+.block-menu a:hover{
+    text-decoration:none;
+    color: #00fbc2;
+    cursor: pointer;
+}
+.basket_empty{
+    position: absolute;
+    background: url("../img/detalipsd/korzina.png")no-repeat;
+    width: 70px;
+    height: 63px;
+    margin: 12px 0 0 1010px;
+    cursor: pointer;
+}
+.basket{
+    position: absolute;
+    background: url("../img/detalipsd/korxina_zamovlena.png")no-repeat;
+    width: 70px;
+    height: 63px;
+    margin: 15px 0 0 1010px;
+    cursor: pointer;
+}
+.basket a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    margin: 0 0 0 2.2em;
+    bottom: -3%;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+}
+/***********************popup empty**********************/
+ #popup_busket, #popup_information, #popup_congratulations, #popup_empty {
+    width: 1000px;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 1.0), inset 0 0 40px rgba(0, 0, 0, 0.3);
+    color: #565656;
+    z-index: 1000;
+    display: none;
+}
+#popup_empty {
+    height: 750px;
+    width: 1000px;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 1.0), inset 0 0 40px rgba(0, 0, 0, 0.3);
+    color: #565656;
+    z-index: 1000;
+    display: none;
+}
+#close_popup_busket, #close_popup_information, #close_popup_congratulations, #close_popup {
+    width: 25px;
+    height: 22px;
+    background: url(../img/detalipsd/cr_red.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+#overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 999;
+    display: none;
+}
+.center_popub{
+    width: 800px;
+    margin: 0 auto;
+}
+.kohuk{
+    position: absolute;
+    top: 40%;
+    background: url("../img/detalipsd/korzina_popap.png")no-repeat;
+    height: 112px;
+}
+.kohuk p{
+    color: #ff9700;
+    font-family:  "Century Gothic Italic";
+    font-size: 80px;
+    margin: 3px 0 0 140px;
+    font-weight: bold;
+
+}
+/********************* popup busket ******************/
+.center_popup{
+    margin: 0 auto;
+}
+.zamovlenna_one{
+    background: #ff9700;
+    width: 110px;
+    height: 40px;
+}
+.zamovlenna_one p{
+    text-align: center;
+    padding: 3px 0 0 0;
+    font-size: 23px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_one{
+    border-radius: 100px;
+    background: #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: 5px solid #ff9700;
+    margin: -62px 0 0 100px;
+}
+.zamovlenna_cryg_one p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.zamovlenna_dva{
+    background: #fff;
+    width: 355px;
+    height: 40px;
+    margin: -64px 0 0 150px;
+}
+.zamovlenna_dva p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #ff9700;
+}
+.zamovlenna_cryg_dva{
+    border-radius: 100px;
+    background: #fff;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 470px;
+}
+.zamovlenna_cryg_dva p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #ff9700;
+}
+.zamovlenna_three{
+    background: #fff;
+    width: 360px;
+    height: 40px;
+    margin: -64px 0 0 535px;
+}
+.zamovlenna_three p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #ff9700;
+}
+.zamovlenna_cryg_three{
+    border-radius: 100px;
+    background: #fff;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 870px;
+}
+.zamovlenna_cryg_three p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #ff9700;
+}
+.block_popup_tovar{
+    height: 220px;
+    position: relative;
+    top: 30px;
+    border-bottom: 1px solid #bab8b8;
+}
+.delete_block_popub_tovar  {
+    background: url(../img/detalipsd/cr_orange.png) no-repeat;
+    height: 22px;
+    width: 25px;
+    margin: 35px 0 0 0;
+    display: block;
+}
+.block_popup_tovar_img{
+    height: 220px;
+    width: 230px;
+    margin: -25px 0 0 50px;
+    cursor: pointer;
+}
+.popup_tovar_text{
+    margin:-35px 0 0 0;
+    cursor: pointer;
+}
+.popup_tovar_text p{
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0 0 320px;
+    font-size: 27px;
+    font-family: "Century Gothic Italic";
+    font-weight: bold;
+}
+.suma_tovar{
+    background: #ff9700;
+    width: 180px;
+    height: 60px;
+    margin: -160px 0 0 335px;
+    border-radius: 10px;
+}
+.suma_tovar p{
+    color: #000000;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Century Gothic Italic";
+    padding-top: 8px;
+}
+.kilkist_product{
+    height: 50px;
+    width: 100px;
+    margin: -50px 0 0 635px;
+    display: flex;
+    cursor: pointer;
+}
+.left_dodat_product{
+    background: url(../img/detalipsd/minus_orang.png)no-repeat;
+    height: 22px;
+    width: 25px;
+    margin: 10px 10px 0 0 ;
+}
+.input-text {
+    width: 40px;
+    height: 21px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+}
+.right_dodat_product{
+    background: url(../img/detalipsd/plus_orang.png)no-repeat;
+    height: 22px;
+    width: 25px;
+    margin: 3px 0 0 10px;
+}
+.osnovna_suma p{
+    float: right;
+    margin: -117px 70px 0 0;
+    font-size: 30px;
+    font-family: "Century Gothic";
+    color: #000000;
+}
+.ostatochna_suma p{
+    float: right;
+    margin: -59px 60px 0 0;
+    font-size: 30px;
+    font-family: "Century Gothic";
+    color: #000000;
+}
+.oformutu_zamovlenna{
+    position: relative;
+    background: #ff9700;
+    width: 300px;
+    height: 160px;
+    float: right;
+    margin: 29px 140px 0 0;
+}
+.oformutu_zamovlenna p{
+    font-size: 30px;
+    font-family: "Century Gothic Italic";
+    margin: 30px 0 0 23px;
+    color: #000000 ;
+}
+.oformutu_zamovlenna a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Century Gothic Italic";
+    color: #000;
+    margin: 0 0 0 40px;
+}
+.oformutu_zamovlenna input{
+    border: 1px solid #fff;
+    color: #ff9700;
+    margin-top: 20px;
+}
+select{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 42px;
+    margin: 10px 0 0 140px;
+    width: 292px;
+    padding: 8px 5px;
+    color: #222222;
+    font-size: 20px;
+}
+.oformutu_zamovlenna input[name=of_zam]{
+    background: #fff;
+    height: 50px;
+    width: 280px;
+    font-size: 24px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.oformutu_zamovlenna input[name=of_zam]:focus{
+    outline: none;
+}
+/*******************************popup information**********************/
+.center_popup{
+    margin: 0 auto;
+}
+.zamovlenna_one_info{
+    background: #ff9700;
+    width: 110px;
+    height: 40px;
+}
+.zamovlenna_one_info p{
+    text-align: center;
+    padding: 3px 0 0 0;
+    font-size: 23px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_one_info{
+    border-radius: 100px;
+    background: #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: 5px solid #ff9700;
+    margin: -62px 0 0 100px;
+}
+.zamovlenna_cryg_one_info p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.zamovlenna_dva_info{
+    background: #ff9700;
+    width: 355px;
+    height: 40px;
+    margin: -64px 0 0 150px;
+}
+.zamovlenna_dva_info p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_dva_info{
+    border-radius: 100px;
+    background: #ff9700;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 470px;
+}
+.zamovlenna_cryg_dva_info p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.zamovlenna_three_info{
+    background: #fff;
+    width: 360px;
+    height: 40px;
+    margin: -64px 0 0 535px;
+}
+.zamovlenna_three_info p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #ff9700;
+}
+.zamovlenna_cryg_three_info{
+    border-radius: 100px;
+    background: #fff;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 870px;
+}
+.zamovlenna_cryg_three_info p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #ff9700;
+}
+.inform{
+    width: 1000px;
+    height: 235px;
+    margin: 25px 0 0 0;
+}
+.inform label{
+    float: left;
+    font-size: 30px;
+    color: #4d4a4a;
+    text-align: left;
+    margin: 9px 11px 0 0;
+    min-width: 118px;
+    position: relative;
+    left: 30px;
+}
+.inform input{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 16px;
+    margin: 10px 0 0 140px;
+    width: 280px;
+    padding: 8px 5px;
+    color: #222222;
+    font-size: 20px;
+}
+.inform input:focus{
+    outline: none;
+}
+.radio_pohtu{
+    border-bottom: 1px solid #bab8b8;
+}
+.radio_button{
+    float: left;
+    width: 265px;
+    height: 44px;
+}
+.radio_button label{
+    float: left;
+    font-size: 30px;
+    color: #4d4a4a;
+    text-align: left;
+    margin: 0 11px 0 0;
+    min-width: 118px;
+    position: relative;
+    left: 30px;
+}
+.inform_prod{
+    width: 1000px;
+    height: 75px;
+    border-bottom: 1px solid #bab8b8;
+}
+.inform_prod label{
+    float: left;
+    font-size: 30px;
+    color: #4d4a4a;
+    text-align: left;
+    margin: 9px 11px 0 0;
+    min-width: 118px;
+    position: relative;
+    left: 30px;
+}
+.inform_prod input {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 16px;
+    margin: 10px 0 0 140px;
+    width: 280px;
+    padding: 8px 5px;
+    color: #222222;
+    font-size: 20px;
+}
+.inform_prod input:focus{
+    outline: none;
+}
+.prodov_zamovlenna{
+    position: relative;
+    background: #ff9700;
+    width: 300px;
+    height: 120px;
+    float: right;
+    margin: -1px 140px 0 0;
+}
+.prodov_zamovlenna input{
+    border: 1px solid #fff;
+    color: #ff9700;
+    margin-top: 40px;
+}
+.prodov_zamovlenna input:focus{
+    outline: none;
+}
+.prodov_zamovlenna input[name=prod_zam]{
+    background: #fff;
+    height: 50px;
+    width: 280px;
+    font-size: 22px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.prodov_zamovlenna input[name=prod_zam]:focus{
+    outline: none;
+}
+.pohta{
+    display: inline-flex;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.hidden{
+    display: none;
+}
+.check{
+    background: url(../img/detalipsd/radio.png) no-repeat;
+    height: 11px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    padding-left: 30px;
+    line-height: 13px;
+    margin: 0 32px 20px 0;
+}
+.check_click_1{
+    background-position: 0 -13px;
+}
+
+.check_click_2{
+    background-position: 0 0;
+}
+/*************************popup congratulation *********/
+.zamovlenna_one_cong{
+    background: #ff9700;
+    width: 110px;
+    height: 40px;
+}
+.zamovlenna_one_cong p{
+    text-align: center;
+    padding: 3px 0 0 0;
+    font-size: 23px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_one_cong{
+    border-radius: 100px;
+    background: #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: 5px solid #ff9700;
+    margin: -62px 0 0 100px;
+}
+.zamovlenna_cryg_one_cong p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.zamovlenna_dva_cong{
+    background: #ff9700;
+    width: 355px;
+    height: 40px;
+    margin: -64px 0 0 150px;
+}
+.zamovlenna_dva_cong p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_dva_cong{
+    border-radius: 100px;
+    background: #ff9700;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 470px;
+}
+.zamovlenna_cryg_dva_cong p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.zamovlenna_three_cong{
+    background: #ff9700;
+    width: 360px;
+    height: 40px;
+    margin: -64px 0 0 535px;
+}
+.zamovlenna_three_cong p{
+    text-align: center;
+    font-size: 23px;
+    border: 5px solid #ff9700;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #fff;
+}
+.zamovlenna_cryg_three_cong{
+    border-radius: 100px;
+    background: #ff9700;
+    border: 5px solid #ff9700;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin: -62px 0 0 870px;
+}
+.zamovlenna_cryg_three_cong p{
+    font-size: 55px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+.end-order{
+    margin: 25px 0 0 0;
+    font-size: 30px;
+    color: #282828;
+    height: 250px;
+    padding-top: 200px;
+    width: 1000px;
+    text-align: center;
+    border-bottom: 1px solid #bab8b8;
+}
+.end-order span{
+    color: #282828;
+    font-size: 28px;
+    font-weight: bold;
+}
+.pokupka{
+    position: relative;
+    background: #ff9700;
+    width: 300px;
+    height: 120px;
+    float: right;
+    margin: -1px 140px 0 0;
+}
+.pokupka input{
+    border: 1px solid #fff;
+    color: #ff9700;
+    margin-top: 40px;
+}
+.pokupka input[name=pok]{
+    background: #fff;
+    height: 50px;
+    width: 280px;
+    font-size: 22px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.pokupka input[name=pok]:focus{
+    outline: none;
+}
+/*************************Footer************************/
+.footer{
+    background: url("../img/detalipsd/fon-osnov.png");
+    width: 100%;
+    height: 100px;
+}
+.footer_content{
+    background: url("../img/detalipsd/fon.png");
+    width: 1200px;
+    height: 100px;
+    margin:0 auto;
+}
+.footer_menu{
+    position: absolute;
+    width: 450px;
+    height: 74px;
+    margin-top: 30px;
+    margin-left: 180px;
+    padding: 0 0 0 0;
+    float: left;
+}
+.fmenu{
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 10px 0 0 60px;
+}
+.fmenu li{
+    display: inline;
+    font-weight:bold;
+    font-size: 22px;
+    font-family:Century Gothic;
+    padding: 0 10px 0 10px;
+}
+.fmenu a{
+    text-decoration: none;
+    color: #e5c8fe;
+    font-weight: bolder;
+}
+.fmenu a:hover{
+    text-decoration: none;
+    color: #00fbc2;
+    cursor: pointer;
+}
+.fnomer li{
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:"Century Gothic";
+    color: #e5c8fe;
+    margin: 0 0 0 650px;
+    cursor: pointer;
+}
+.footer_nomer{
+    margin-top: -10px;
+}
+.footer_nomer li{
+    display: inline;
+    font: 24px Century Gothic Bolt Italik;
+    color: #fff;
+    margin-left: 678px;
+    cursor: pointer;
+}
+.companu{
+    margin-top: -15px;
+    font: 20px Century Gothic;
+    float: right;
+}
+.companu  a{
+    text-decoration: none;
+    color: #e5c8fe;
+}
+/**********************slider********************************/
+.slider_center{
+    width: 1200px;
+    height: 430px;
+}
+.slid{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+#wrapper {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    padding: 10px;
+}
+.bot_prev_next{
+    height:400px;
+    width: 1200px;
+    top: 0;
+}
+#carousel img {
+    display: block;
+    float: left;
+    width: 1200px;
+    height: 400px;
+}
+#prev {
+    background:url('../img/slider/стрілка%20ліва10.png')no-repeat center center;
+    position: absolute;
+    opacity: 0.2;
+    display: block;
+    height: 400px;
+    width: 75px;
+    top: 10px ;
+    padding: 0;
+    left: 10px;
+}
+#next {
+    background: url("../img/slider/стрілка%20права10.png")no-repeat center center;
+    position: absolute;
+    opacity: 0.2;
+    display: block;
+    height: 400px;
+    width: 75px;
+    top: 10px;
+    padding: 0;
+    right: 10px;
+}
+#prev:hover {
+    opacity: 0.8;
+    background: silver url("../img/slider/стрілка%20ліва.png")no-repeat center center;
+}
+#next:hover{
+    opacity: 0.8;
+    background:silver  url("../img/slider/стрілка%20права.png")no-repeat center center;
+}
+#pager {
+    position: absolute;
+    top:385px ;
+    left:560px;
+}
+#pager a {
+    background-color: #232323;
+    border-radius: 100%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    opacity: 0.7;
+}
+#pager a:hover {
+    background-color: #232323;
+    opacity: 0.5;
+}
+#pager a span {
+    display: none;
+}
+#pager a.selected {
+    background-color: #ff9700;
+    width:17px;
+    height:17px;
+}
+/*************************home******************************/
+.center{
+    width: 1200px;
+    margin:0 auto;
+}
+.popular_tovar{
+    margin: 0 auto;
+    height: 930px;
+}
+.name_popular_tovar{
+    height: 50px;
+    color: #ff9700;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Century Gothic";
+}
+.block_tovar{
+    display:inline;
+    float: left;
+    width:290px;
+    height:430px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+.tovar_img img {
+    width: 230px;
+    height: 230px;
+    margin: 15px 0 0 30px;
+}
+.block_tovar:hover{
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    width:290px;
+    height:430px;
+}
+.name_tovar  p{
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    word-break: break-all
+}
+.parametru p{
+    color: #232323;
+    font-size:18px;
+    margin:10px 0 0 25px;
+}
+.pokupka_corzuna{
+    width: 145px;
+    height: 42px;
+    margin-right: 3px;
+    float: right;
+}
+.pokupka_corzuna_kohuk{
+    width: 145px;
+    height: 42px;
+    margin-right: 3px;
+    float: right;
+}
+.pokupka_corzuna_kohuk a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff9700;
+    font-family: "Century Gothic";
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.pokupka_corzuna_kohuk  a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.top-emblem{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-novunka{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pokupka_corzuna img{
+   float: right;
+    margin-right: 90px;
+    cursor: pointer;
+}
+.pokupka_corzuna a{
+    text-decoration: none;
+    color: #ff9700;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    float: right;
+    margin-right: -130px;
+    margin-top: 10px;
+}
+.pokupka_corzuna  a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+            /************************pager*********************/
+.goods_pages{
+    height: 25px;
+    margin: 0 0 30px 380px;
+    font-size: 27px;
+    top: 20px;
+}
+.forward, .back{
+    float: left;
+    margin: 0 21px;
+    text-decoration: none;
+    color: #444343;
+}
+.forward:hover, .back:hover{
+    color: #ff8400;
+    text-decoration: underline;
+}
+.goods_pages ul li {
+    float: left;
+    padding: 0 4px;
+    display: inline;
+}
+.goods_pages ul li{
+    padding: 0 6px;
+}
+.goods_pages ul li a{
+    text-decoration: none;
+    color: #444343;
+}
+.goods_pages ul li span{
+    text-decoration: none;
+    color: #444343;
+}
+.goods_pages ul li a:hover{
+    color: #ffffff;
+    width: 40px;
+    height: 45px;
+    background: #ff8400;
+}
+        /*****************contact***********/
+.browse_by_category ul li{
+    display: inline-block;
+    font-size: 18px;
+    color: #444343;
+}
+.browse_by_category ul li a{
+    color: #444343;
+    font-size: 18px;
+    text-decoration:none;
+}
+.browse_by_category ul li a:hover{
+    text-decoration: underline;
+}
+.browse_by_category ul li i{
+    font-size: 18px;
+    color: #444343;
+    padding: 0 7px;
+    background: url(../img/detalipsd/strilka.png)no-repeat;
+    height: 8px;
+    display: block;
+    float: left;
+    width: 9px;
+}
+.rozt_block{
+    height: 470px;
+}
+.production-block {
+    width: 200px;
+    float: left;
+    margin: 20px 0 0 105px;
+    cursor: pointer;
+}
+.kiyvstar_nomer p{
+    margin: -35px 0 35px 75px;
+    font: 20px Century Gothic Italic;
+    cursor: pointer;
+}
+.life_nomer p{
+    margin: -35px 0 35px 75px;
+    font: 20px Century Gothic Italic;
+    cursor: pointer;
+}
+.mail{
+    margin: 0 0 0 8px;
+}
+.mail p {
+    margin: -35px 0 35px 62px;
+    font: 20px Century Gothic Italic;
+    cursor: pointer;
+}
+.skype{
+    margin: 0 0 0 16px;
+}
+.skype p {
+    margin: -35px 0 35px 55px;
+    font: 20px Century Gothic Italic;
+    cursor: pointer;
+}
+.map{
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+.callback{
+    font-size: 25px;
+    color: #ff8400;
+    margin: 0 0 40px 90px;
+}
+h1{
+   margin: 0 0 10px 10px;
+   font: bold 55px Century Gothic;
+    font-style: italic;
+}
+.callback label{
+    float: left;
+    font-size: 30px;
+    color: #4d4a4a;
+    text-align: right;
+    margin: 8px 11px 0 0;
+    min-width: 118px;
+}
+.callback input{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 16px; width: 280px;
+    padding: 8px 5px;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.callback input:focus{
+ outline: none;
+}
+
+
+
+.callback input[name=order]{
+    background: #ff8400;
+    height: 33px;
+    width: 108px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 220px;
+}
+
+.callback button[name=order]{
+    background: #ff8400;
+    height: 33px;
+    width: 108px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 220px;
+}
+
+.callback button[name=order]:hover{
+    box-shadow: -9px 4px 6px 0px  #cccccc;
+}
+
+.callback button a{
+    color: #fff;
+    text-decoration: none;
+   /* display: none;*/
+}
+.callback_put textarea{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 100px; width: 280px;
+    padding: 8px 5px;
+    color: #222222;
+    font-size: 20px;
+    margin-top: 10px;
+    resize: none;
+}
+.callback_put textarea:focus{
+    outline: none;
+}
+
+#textarea_error{
+    border: 2px solid #DD4B39;
+}
+                /****************product*********************/
+.pit_product{
+    margin: 0 auto;
+    height: 880px;
+}
+
+
+
+.name_popular_tovar_pit{
+    height: 50px;
+    color: #ff9700;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Century Gothic";
+}
+.block_tovar_pit{
+    display:inline;
+    float: left;
+    width:290px;
+    height:430px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+.tovar_img_pit img{
+    width: 230px;
+    height: 230px;
+    margin: 15px 0 0 30px;
+}
+.block_tovar_pit:hover{
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    width:290px;
+    height:430px;
+}
+.name_tovar_pit p{
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+}
+.parametru_pit p{
+    color: #232323;
+    font-size:18px;
+    margin:10px 0 0 25px;
+}
+.pokupka_corzuna_pit{
+    width: 145px;
+    height: 42px;
+    margin-right: 3px;
+    float: right;
+}
+.pokupka_corzuna_pit img{
+    float: right;
+    margin-right: 90px;
+    cursor: pointer;
+}
+.pokupka_corzuna_pit a{
+    text-decoration: none;
+    color: #ff9700;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    float: right;
+    margin-right: -130px;
+    margin-top: 10px;
+}
+.pokupka_corzuna_pit a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.pokupka_corzuna_kohuk_pit{
+    width: 145px;
+    height: 42px;
+    margin-right: 3px;
+    float: right;
+}
+.pokupka_corzuna_kohuk_pit a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff9700;
+    font-family: "Century Gothic";
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.pokupka_corzuna_kohuk_pit  a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/**************************delivery********************************/
+.center_inf{
+    height: 1000px;
+    text-align: justify;
+}
+
+.inf h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff9700;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+.inf p{
+    font-size: 24px;
+    color: #272525;
+    margin: 0 0 0 40px;
+}
+.inf b{
+    margin: 0 0 0 500px;
+}
+/************************* about *************************/
+.center_inf{
+    height: 1000px;
+    text-align: justify;
+}
+.inf h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff9700;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+.inf p{
+    font-size: 24px;
+    color: #272525;
+    margin: 0 0 0 40px;
+}
+.inf i{
+    color: #272525;
+    font-weight: bold;
+}
+/************************** service********************/
+.center_inf{
+    height: 1000px;
+    text-align: justify;
+}
+.inf h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff9700;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+.inf p{
+    font-size: 31px;
+    color: #272525;
+    margin: 0 0 0 40px;
+}
+.inf b{
+     margin: 0 0 0 500px;
+ }
+/**********************category************************/
+.center_kategoria{
+    height: 1100px;
+}
+.kategoria_product{
+    margin: 0 auto;
+    height: 1010px;
+}
+.name_popular_tovar_kategoria{
+    height: 50px;
+    color: #ff9700;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Century Gothic";
+}
+.block_tovar_kategoria{
+    display:inline;
+    float: left;
+    width:290px;
+    height:330px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+.tovar_img_kategoria img{
+    width: 230px;
+    height: 230px;
+    margin: 15px 0 0 30px;
+}
+.block_tovar_kategoria:hover{
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    width:290px;
+    height:330px;
+}
+.name_tovar_kategoria p  {
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    word-break: break-all
+}
+.kategoria_product a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+/***************************404 error********************/
+.bg-404{
+    background: #f6f4f3;
+    min-height: 100%;
+    max-height: 1500px;
+}
+.error404{
+    background: url("../img/detalipsd/404.png") no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    margin: -191px 0 0 -250px;
+}
+.error404 p{
+    color: #ff8400;
+    font-size:63px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 423px 0 0 -30px;
+}
+
+
+#input_error{
+    border: 2px solid red;
+}
+
+#input_name_error, #input_phone_error, #input_email_error, #input_city_error, #input_adress_error{
+    border: 1px solid red;
+}
+
+
+
+#end_order{
+    margin: 25px 0 0 0;
+    font-size: 30px;
+    color: #282828;
+    height: 250px;
+    padding-top: 200px;
+    width: 1000px;
+    text-align: center;
+    border-bottom: 1px solid #bab8b8;
+}
+#end_order span{
+    color: #282828;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#contact_name_error, #contact_phone_error, #contact_email_error, #contact_putanna_error{
+    border: 1px solid red;
+}

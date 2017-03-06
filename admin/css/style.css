@@ -1,0 +1,1585 @@
+body{
+    padding:0;
+    margin: 0 auto;
+}
+.center_admin{
+    width: 1200px;
+    margin:0 auto;
+}
+/***********************popup***************************************/
+#popup_category_add, #popup_category_edit, #popup_category_delete,
+#popup_product_add, #popup_product_edit, #popup_product_delete,
+#popup_slider{
+    width: 1000px;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5), inset 0 0 60px rgba(0, 0, 0, 0.2);
+    color: #565656;
+    z-index: 1000;
+    display: none;
+}
+#close_popup_category_add, #close_popup_category_edit, #close_popup_category_delete,
+#close_popup_product_add, #close_popup_product_edit, #close_popup_product_delete,
+#close_popup_slider{
+    width: 25px;
+    height: 22px;
+    background: url(../img/detalipsdadmin/cr_red_admin.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 999;
+    display: none;
+}
+/*******************autorizacia*************************/
+.admin_login{
+    border-radius: 10px;
+    border: 3px solid #ff9700;
+    height: 480px;
+    width: 662px;
+    background: url("../img/detalipsdadmin/fon_login.png");
+    padding-top: 15px;
+    color:#333;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+.login input{
+    width: 350px;
+    height: 53px;
+    margin-left: 20%;
+    border-radius: 3px;
+    margin-top: 20%;
+    padding-left: 10%;
+    font-size: 25px;
+    font-family: Candara Regular;
+}
+.login input:focus{
+    border: 3px solid #ff9700;
+    outline: none;
+}
+
+.login_error input{
+    width: 350px;
+    height: 53px;
+    margin-left: 20%;
+    border-radius: 3px;
+    margin-top: 20%;
+    padding-left: 10%;
+    font-size: 25px;
+    font-family: Candara Regular;
+
+    border: 3px solid red;
+    outline: none;
+}
+.password input{
+    margin-top: 5%;
+    width: 350px;
+    height: 50px;
+    padding-left: 10%;
+    margin-left: 20%;
+    padding-top: 5px;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    font-size: 25px;
+    font-family: Candara Regular;
+}
+
+
+.password input:focus{
+    border: 3px solid #ff9700;
+    outline: none;
+}
+
+.password_error input{
+    margin-top: 5%;
+    width: 350px;
+    height: 50px;
+    padding-left: 10%;
+    margin-left: 20%;
+    padding-top: 5px;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    font-size: 25px;
+    font-family: Candara Regular;
+    border: 3px solid red;
+    outline: none;
+}
+
+.pasword_img{
+    margin: 0 0 -18px -370px;
+}
+.login_img{
+    margin: 0 0 -20px -370px;
+}
+.login_feis{
+    margin: 0 0 -5px -55px;
+}
+.pasword_key{
+    margin: 0 0 -5px -55px;
+}
+.vhid_button input{
+    height: 85px;
+    width: 205px;
+    background:#ff9700;
+    font-size:35px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+.vhid_button input:focus{
+    outline: none;
+}
+/***********************admin_heder********************/
+.admin_header{
+    width: 100%;
+    height: 100px;
+    background: url("../img/detalipsdadmin/fon-osnov.png");
+}
+.admin_header_content{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../img/detalipsdadmin/fon.png");
+}
+.admin_logo a{
+    position: absolute;
+    background: url("../img/detalipsdadmin/admin.png")no-repeat;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.admin_block_menu{
+    position: absolute;
+    width: 1200px;
+    height: 74px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 0 0 0 0;
+    float: left;
+}
+.admin_menu li{
+    display: inline;
+    font-weight:bold;
+    font-size: 24px;
+    font-family:Century Gothic;
+    padding: 0 10px 0 10px;
+}
+.admin_block_menu a{
+    text-decoration: none;
+    color: #e5c8fe;
+    font-weight: bold;
+}
+.admin_block_menu a:hover{
+    text-decoration:none;
+    color: #00fbc2;
+    cursor: pointer;
+}
+/************************admin_footer***************/
+.admin_footer{
+    background: url("../img/detalipsdadmin/fon-osnov.png");
+    width: 100%;
+    height: 100px;
+}
+.admin_footer_content{
+    background: url("../img/detalipsdadmin/fon.png");
+    width: 1200px;
+    height: 100px;
+    margin:0 auto;
+}
+.admin_footer_content span{
+    position: relative;
+    top: 15%;
+    left: 35%;
+    font-size: 54px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: #ff9700;
+}
+/*****************************admin_home*************************************/
+.vhid_pruvitanna{
+    height: 500px;
+    background: #fff;
+}
+.vhid_pruvitanna p{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    color: #ff9700;
+    font-size: 54px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+}
+/*********************************admin_category******************************************/
+.category_dod_red_del{
+    height: 500px;
+}
+.category_dod_red_del input{
+    height: 100px;
+    width: 300px;
+    background:#ff9700;
+    font-size:35px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 38%;
+    cursor: pointer;
+}
+.category_dod_red_del input:focus{
+    outline: none;
+}
+.category_add {
+    margin: 50px 0 50px 0;
+}
+.category_edit{
+    margin: 0 0 50px 0;
+}
+.category_delete{
+    margin: 0 0 10px 0;
+}
+/*********************************admin_slider*****************************/
+.slider_dod_del{
+    height: 200px;
+    display: flex;
+    margin: 100px 0 0 120px;
+}
+.slider_dod_del input{
+    height: 100px;
+    width: 300px;
+    background:#ff9700;
+    font-size:35px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 38%;
+    cursor: pointer;
+}
+.slider_dod_del input:focus{
+    outline: none;
+}
+.slider_delete{
+    margin: 0 0 0 200px;
+}
+.foto_slaider{
+    height: 400px;
+    margin: 0 0 20px 150px;
+}
+.foto_slaider img{
+    width: 1000px;
+    height: 400px;
+
+}
+/**********************************slider_delete***********************/
+.center_popup_admin{
+    margin: 0 auto;
+}
+.popup_help_slider p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.foto_slider_delete{
+    height: 350px;
+    margin: 25px 0 0 30px;
+}
+.foto_slider_delete img{
+    width: 950px;
+    height: 350px;
+}
+.menu_popup_slider{
+    height: 100px;
+    position: absolute;
+    margin: 20px 0 0 520px;
+    text-align: center;
+}
+.menu_popup_slider select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_slider select:focus{
+    outline: none;
+}
+.add_foto_slider input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.add_foto_slider input:focus{
+    outline: none;
+}
+.add_foto_slider {
+    margin: 80px 0 0 0;
+}
+/****************************************admin_product******************/
+.product_dod_red_del{
+    height: 500px;
+}
+.product_dod_red_del input{
+    height: 100px;
+    width: 300px;
+    background:#ff9700;
+    font-size:35px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 38%;
+    cursor: pointer;
+}
+.product_dod_red_del input:focus{
+    outline: none;
+}
+.product_add {
+    margin: 50px 0 50px 0;
+}
+.product_edit{
+    margin: 0 0 50px 0;
+}
+.product_delete{
+    margin: 0 0 10px 0;
+}
+/******************************************dodavanna_popup_product******************************/
+.center_popup_admin{
+    margin: 0 auto;
+}
+.popup_help_dod p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_dod{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.top_menu_popup_dod{
+    display: inline-flex;
+    margin: 0 0 0 60px;
+    color: #000;
+}
+.hidden{
+    display: none;
+}
+.top_menu_dod{
+    background: url(../img/detalipsdadmin/check_box.png) no-repeat;
+    height: 30px;
+    font-size: 27px;
+    cursor: pointer;
+    padding-left: 39px;
+    line-height: 28px;
+    margin: 25px 0 0 25px;
+}
+.top_menu_dod:hover{
+    /*поміняти на active*/
+    background-position: 0 -31px;
+}
+.menu_popup_dod select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_dod select:focus{
+    outline: none;
+}
+.menu_popup_dod input  {
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+}
+.menu_popup_dod input:focus{
+    outline: none;
+}
+.foto_popup_dod{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_dod img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_dod input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_dod input:focus{
+    outline: none;
+}
+.zberugtu_dod {
+    margin: 80px 0 0 0;
+}
+.add_foto_dod input{
+    height: 80px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: -70%;
+    cursor: pointer;
+}
+.add_foto_dod input:focus{
+    outline: none;
+}
+.add_foto_dod {
+    margin: -80px 0 0 0;
+    float: right;
+}
+/******************************************edit_popup_product******************************/
+.center_popup_admin{
+    margin: 0 auto;
+}
+.popup_help_edit p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_edit{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+/*** робить чорним колір у plasholder*/
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000;
+}
+:-ms-input-placeholder {
+    color: #000;
+}
+.menu_popup_edit input  {
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+}
+.menu_popup_edit input:focus{
+    outline: none;
+}
+.top_menu_popup_edit{
+    display: inline-flex;
+    margin: 0 0 0 60px;
+    color: #000;
+}
+.hidden{
+    display: none;
+}
+.top_menu_edit{
+    background: url(../img/detalipsdadmin/check_box.png) no-repeat;
+    height: 30px;
+    font-size: 27px;
+    cursor: pointer;
+    padding-left: 39px;
+    line-height: 28px;
+    margin: 25px 0 0 25px;
+}
+.top_menu_edit_click1{
+    background-position: 0 -31px;
+}
+
+.top_menu_edit_click2{
+    background-position: 0 0;
+}
+.menu_popup_edit select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_edit select:focus{
+    outline: none;
+}
+.foto_popup_edit{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_edit img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_edit input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_edit input:focus{
+    outline: none;
+}
+.zberugtu_edit {
+    margin: 150px 0 0 0;
+}
+.add_foto_edit input{
+    height: 80px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: -70%;
+    cursor: pointer;
+}
+.add_foto_edit input:focus{
+    outline: none;
+}
+.add_foto_edit {
+    margin: -80px 0 0 0;
+    float: right;
+}
+/******************************************delete_popup_product******************************/
+.center_popup_admin{
+    margin: 0 auto;
+}
+.popup_help_delete p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_delete{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.menu_popup_delete select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_delete select:focus{
+    outline: none;
+}
+.foto_popup_delete{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_delete img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_delete input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_delete input:focus{
+    outline: none;
+}
+.zberugtu_delete {
+    margin: 80px 0 0 0;
+}
+/****************************************dodavanna_popup_categori****************************/
+.popup_help_categori_dod p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_categori_dod{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.menu_popup_categori_dod input  {
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+}
+.menu_popup_categori_dod input:focus{
+    outline: none;
+}
+.foto_popup_categori_dod{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_categori_dod img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_categori_dod input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_categori_dod input:focus{
+    outline: none;
+}
+.zberugtu_categori_dod {
+    margin: 80px 0 0 0;
+}
+.add_foto_categori_dod input{
+    height: 80px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: -70%;
+    cursor: pointer;
+}
+.add_foto_categori_dod input:focus{
+    outline: none;
+}
+.add_foto_categori_dod {
+    margin: -80px 0 0 0;
+    float: right;
+}
+/****************************************redahyvanna_popup_categori****************************/
+.popup_help_categori_red p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_categori_red{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.menu_popup_categori_red select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_categori_red select:focus{
+    outline: none;
+}
+.menu_popup_categori_red  input{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+}
+.menu_popup_categori_red  input:focus{
+    outline: none;
+}
+.foto_popup_categori_red{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_categori_red img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_categori_red input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_categori_red input:focus{
+    outline: none;
+}
+.zberugtu_categori_red {
+    margin: 80px 0 0 0;
+}
+.add_foto_categori_red input{
+    height: 80px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: -70%;
+    cursor: pointer;
+}
+.add_foto_categori_red input:focus{
+    outline: none;
+}
+.add_foto_categori_red {
+    margin: -80px 0 0 0;
+    float: right;
+}
+/****************************************delete_popup_categori****************************/
+.popup_help_categori_delete p{
+    font-size: 27px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 5px 0 0 30px;
+}
+.menu_popup_categori_delete{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.menu_popup_categori_delete select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 11px 0 0 80px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_categori_delete select:focus{
+    outline: none;
+}
+.foto_popup_categori_delete{
+    position: relative;
+    width: 420px;
+    height: 350px;
+    left: 550px;
+    top: 30px;
+}
+.foto_popup_categori_delete img{
+    width: 420px;
+    height: 350px;
+}
+.zberugtu_categori_delete input{
+    height: 80px;
+    width: 200px;
+    background:#ff9700;
+    font-size:27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius:10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.zberugtu_categori_delete input:focus{
+    outline: none;
+}
+.zberugtu_categori_delete {
+    margin: 80px 0 0 0;
+}
+/****************************************admin_order*****************************************/
+.center_admin_order{
+    width: 1300px;
+    margin: 0 auto;
+}
+.help_admin p{
+    font-size: 30px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+}
+.order_table{
+    height: 750px;
+    width: 1200px;
+}
+.menu_popup_search_zamovlen select{
+    border: 3px solid #ff9700;
+    color: #000;
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    margin: 11px 0 0 15px;
+    font-size: 25px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+.menu_popup_search_zamovlen select:focus{
+    outline: none;
+}
+.search_zamovlen{
+    height: 70px;
+    margin-top: 15px;
+}
+.search_slider input{
+    height: 50px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 60%;
+}
+.search_slider input:focus{
+    outline: none;
+}
+.search_slider {
+    margin: -50px 0 0 200px;
+}
+.print_slider input{
+    height: 55px;
+    width: 200px;
+    background: #ff9700;
+    font-size: 27px;
+    color: #fff;
+    border: 3px solid #ff9700;
+    font-weight: bold;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    margin-right: -65%;
+}
+.print_slider input:focus{
+    outline: none;
+}
+.osnovna_tabl_zamovlen{
+    border-right:1px solid #000000 ;
+    border-left:1px solid #000000 ;
+    border-top:1px solid #000000 ;
+    border-bottom:1px solid #000000 ;
+    width: 1300px;
+    height: 655px;
+    margin: 20px 0 20px 0;
+}
+.osnmenu_zamovlen{
+    height: 50px;
+    border-bottom: 1px solid #000000;
+}
+.nomer_zamovlen{
+    border-right: 1px solid #000000;
+    width: 40px;
+    height: 50px;
+}
+.nomer_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+.categoru_zamovlen{
+    border-right: 1px solid #000000;
+    width: 115px;
+    height: 50px;
+    margin: -50px 0 0 40px;
+}
+.categoru_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 8px;
+}
+.foto_zamovlen{
+    border-right: 1px solid #000000;
+    width: 118px;
+    height: 50px;
+    margin: -50px 0 0 155px;
+}
+.foto_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 30px;
+}
+.name_tovar_zamovlen{
+    border-right: 1px solid #000000;
+    width: 160px;
+    height: 50px;
+    margin: -50px 0 0 275px;
+}
+.name_tovar_zamovlen p {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 15px;
+}
+.kilkist_zamovlen{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 435px;
+}
+.kilkist_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 3px;
+}
+.vartist_zamovlen{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 536px;
+}
+.vartist_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 7px;
+}
+.pib_zamovlen{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 50px;
+    margin: -50px 0 0 637px;
+}
+.pib_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 20px;
+}
+.tel_zamovlen{
+    border-right: 1px solid #000000;
+    width: 120px;
+    height: 50px;
+    margin: -50px 0 0 740px;
+}
+.tel_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 5px;
+}
+.elpohta_zamovlen{
+    border-right: 1px solid #000000;
+    width: 85px;
+    height: 50px;
+    margin: -50px 0 0 860px;
+}
+.elpohta_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+.dostavka_zamovlen{
+    border-right: 1px solid #000000;
+    width: 102px;
+    height: 50px;
+    margin: -50px 0 0 946px;
+}
+.dostavka_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 5px;
+}
+.city_zamovlen{
+    border-right: 1px solid #000000;
+    width: 75px;
+    height: 50px;
+    margin: -50px 0 0 1049px;
+}
+.city_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 7px;
+}
+.adres_zamovlen{
+    border-right: 1px solid #000000;
+    width: 105px;
+    height: 50px;
+    margin: -50px 0 0 1125px;
+}
+.adres_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 16px;
+}
+.date_zamovlen{
+    width: 69px;
+    height: 50px;
+    margin: -50px 0 0 1231px;
+}
+.date_zamovlen p{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+.zamovlenu_tovaru{
+    height: 100px;
+    border-bottom: 1px solid #000000;
+}
+.nomeracia_tovar{
+    border-right: 1px solid #000000;
+    width: 40px;
+    height: 100px;
+
+}
+.nomeracia_tovar p{
+    width: 38px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 30px 0 0 2px;
+    word-break: break-all
+}
+.categoria_tovar{
+    border-right: 1px solid #000000;
+    width: 125px;
+    height: 100px;
+    margin: -100px 0 0 30px;
+}
+.categoria_tovar p{
+    width: 80px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 15px 0 0 25px;
+    word-break: break-all
+}
+.foto_tovar{
+    border-right: 1px solid #000000;
+    width: 118px;
+    height: 100px;
+    margin: -100px 0 0 155px;
+}
+.foto_tovar img{
+    height: 70px;
+    width: 100px;
+    margin: 5px 0 0 10px;
+}
+.name_tovar{
+    border-right: 1px solid #000000;
+    width: 161px;
+    height: 100px;
+    margin: -100px 0 0 274px;
+}
+.name_tovar p{
+    width: 165px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 15px 0 0 0;
+    word-break: break-all
+}
+.kilkist_tovar{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 100px;
+    margin: -100px 0 0 435px;
+}
+.kilkist_tovar p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 30px 0 0 20px;
+    word-break: break-all
+}
+.vartist_tovaru{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 100px;
+    margin: -100px 0 0 536px;
+}
+.vartist_tovaru p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 30px 0 0 7px;
+    word-break: break-all
+}
+.pib_tovar_zam{
+    border-right: 1px solid #000000;
+    width: 100px;
+    height: 100px;
+    margin: -100px 0 0 637px;
+}
+.pib_tovar_zam p{
+    width: 88px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 5px 0 0 5px;
+    word-break: break-all;
+}
+.tel_tovar_zam{
+    border-right: 1px solid #000000;
+    width: 122px;
+    height: 100px;
+    margin: -100px 0 0 738px;
+}
+.tel_tovar_zam p{
+    width: 106px;
+    height: 100px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 36px 0 0 8px;
+    word-break: break-all;
+}
+.el_pohta_zam{
+    border-right: 1px solid #000000;
+    width: 84px;
+    height: 100px;
+    margin: -100px 0 0 861px;
+}
+.el_pohta_zam p{
+    width: 80px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 2px;
+    word-break: break-all;
+}
+.dostavka_pohta_zam{
+    border-right: 1px solid #000000;
+    width: 102px;
+    height: 100px;
+    margin: -100px 0 0 946px;
+}
+.dostavka_pohta_zam p{
+    width: 62px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 20px 0 0 17px;
+    word-break: break-all;
+}
+.city_zam{
+    border-right: 1px solid #000000;
+    width: 76px;
+    height: 100px;
+    margin: -100px 0 0 1048px;
+}
+.city_zam p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 15px;
+    word-break: break-all;
+}
+.adres_zam{
+    border-right: 1px solid #000000;
+    width: 105px;
+    height: 100px;
+    margin: -100px 0 0 1125px;
+}
+.adres_zam p{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 2px;
+    word-break: break-all;
+}
+.date_zam{
+    width: 70px;
+    height: 100px;
+    margin: -100px 0 0 1231px;
+}
+.date_zam p{
+    width: 69px;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 35px 0 0 1px;
+    word-break: break-all;
+}
+/************************pager_admin*********************/
+.goods_pages_admin{
+    height: 25px;
+    margin:0 0 30px 380px ;
+    font-size: 27px;
+    top: 20px;
+}
+.forward, .back{
+    float: left;
+    margin: 0 21px;
+    text-decoration: none;
+    color: #444343;
+}
+.forward:hover, .back:hover{
+    color: #ff8400;
+    text-decoration: underline;
+}
+.goods_pages_admin ul li {
+    float: left;
+    padding: 0 4px;
+    display: inline;
+}
+.goods_pages_admin ul li{
+    padding: 0 6px;
+}
+.goods_pages_admin ul li a{
+    text-decoration: none;
+    color: #444343;
+}
+.goods_pages_admin ul li span{
+    text-decoration: none;
+    color: #444343;
+}
+.goods_pages_admin ul li a:hover{
+    color: #ffffff;
+    width: 40px;
+    height: 45px;
+    background: #ff8400;
+}
+/**************************admin question***************************/
+.help_admin_zvazok p{
+    font-size: 30px;
+    color: #000000;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+}
+.table_question{
+    height: 750px;
+    width: 1200px;
+}
+.osnovna_tabl_questio{
+    border-right:1px solid #000000 ;
+    border-left:1px solid #000000 ;
+    border-top:1px solid #000000 ;
+    border-bottom:1px solid #000000 ;
+    width: 1140px;
+    height: 656px;
+    margin: 20px 0 20px 20px;
+}
+.question_nadpus{
+    height: 50px;
+    border-bottom: 1px solid #000000;
+}
+.question_date_prus{
+    border-right: 1px solid #000000;
+    width: 140px;
+    height: 50px;
+    margin: 0 0 0 0;
+}
+.question_date_prus p{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_name{
+    border-right: 1px solid #000000;
+    width: 140px;
+    height: 50px;
+    margin: -50px 0 0 140px;
+}
+.question_name p{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_nomer{
+    border-right: 1px solid #000000;
+    width: 200px;
+    height: 50px;
+    margin: -50px 0 0 280px;
+}
+.question_nomer p {
+    width: 213px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_pohta_el{
+    border-right: 1px solid #000000;
+    width: 250px;
+    height: 50px;
+    margin: -50px 0 0 480px;
+}
+.question_pohta_el p {
+    width: 255px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_putanna{
+    width: 410px;
+    height: 50px;
+    margin: -50px 0 0 730px;
+}
+.question_putanna p {
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 1px;
+    word-break: break-all;
+}
+.question_zv_zvazok{
+    height: 100px;
+    border-bottom: 1px solid #000000;
+}
+.question_date_prus_zvazok{
+    border-right: 1px solid #000000;
+    width: 140px;
+    height: 100px;
+    margin: 0 0 0 0;
+}
+.question_date_prus_zvazok p{
+    width: 140px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_name_zv_zvazok{
+    border-right: 1px solid #000000;
+    width: 140px;
+    height: 100px;
+    margin: -100px 0 0 140px;
+}
+.question_name_zv_zvazok p{
+    width: 140px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_nomer_zv_zvazok{
+    border-right: 1px solid #000000;
+    width: 199px;
+    height: 100px;
+    margin: -100px 0 0 281px;
+}
+.question_nomer_zv_zvazok p {
+    width: 220px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_pohta_el_zv_zvazok{
+    border-right: 1px solid #000000;
+    width: 250px;
+    height: 100px;
+    margin: -100px 0 0 480px;
+}
+.question_pohta_el_zv_zvazok p {
+    width: 250px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 0;
+    word-break: break-all;
+}
+.question_putanna_zv_zvazok{
+    width: 410px;
+    height: 100px;
+    margin: -100px 0 0 731px;
+}
+.question_putanna_zv_zvazok p {
+    width: 410px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Century Gothic Italic";
+    position: absolute;
+    margin: 10px 0 0 1px;
+    word-break: break-all;
+}
+
+/* для тестування*/
+#upload{
+    cursor: pointer;
+}
+/* для тестування*/
+

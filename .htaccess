@@ -1,0 +1,39 @@
+DirectoryIndex index.php index.html index.htm
+Options -Indexes
+php_flag display_errors on
+php_value error_reporting 1024
+php_value session.cookie_do ".domovuk.com.ua"
+ErrorDocument 404 /page404.php
+AddDefaultCharset UTF-8
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^domovuk.com.ua
+RewriteBase /
+
+RewriteRule ^(admin)/{0,1}$ admin/index.php?section=$1&%{QUERY_STRING}
+RewriteRule ^(admin)/(home)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+RewriteRule ^(admin)/(category)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+RewriteRule ^(admin)/(order)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+RewriteRule ^(admin)/(product)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+RewriteRule ^(admin)/(question)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+RewriteRule ^(admin)/(slider)/{0,1}$ admin/index.php?section=$1&view=$2&%{QUERY_STRING}
+
+RewriteRule ^(busket)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+
+RewriteRule ^(category)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(category)/([0-9]{1,11})/{0,1}$ index.php?view=$1&page=$2&%{QUERY_STRING}
+
+RewriteRule ^(contact)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(product)/([0-9]{1,11})/{0,1}$ index.php?view=$1&cat=$2%{QUERY_STRING}
+RewriteRule ^(service)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(about)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(delivery)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(popup_empty)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(popup_busket)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(popup_congratulations)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+RewriteRule ^(popup_information)/{0,1}$ index.php?view=$1&%{QUERY_STRING}
+
+
+
+
+
+
